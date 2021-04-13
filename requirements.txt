@@ -3,3 +3,4 @@ librosa == 0.8.0
 uvicorn
 python-multipart
 Flask
+SoundFile
