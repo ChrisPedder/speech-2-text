@@ -13,6 +13,7 @@ class STT_model(object):
         print("Model loaded successfully")
 
     def convert(self, filepath):
+        import ipdb; ipdb.set_trace()
         #load any audio file of your choice
         speech, rate = librosa.load(filepath, sr=16000)
 
@@ -28,5 +29,5 @@ class STT_model(object):
 
 if __name__ == '__main__':
     model = STT_model()
-    transcription = model.convert('male.wav')
+    transcription = model.convert('ford.wav')
     print(transcription)
